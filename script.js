@@ -6,6 +6,10 @@ const iListaTarefas = document.querySelector('#lista-tarefas')
 const iCriarTarefa = document.querySelector('#criar-tarefa')
 const iApagarTudo = document.querySelector('#apaga-tudo')
 const iConcluir = document.querySelector('#remover-finalizados')
+const iSalvar = document.querySelector('#salvar-tarefas')
+const iRemover = document.querySelector('#remover-selecionado')
+const iCima = document.querySelector('#mover-cima')
+const iBaixo = document.querySelector('#mover-baixo')
 
 
 // MAIN
@@ -97,6 +101,7 @@ function deleteEverything()
 
 function deleteFinished()
 {
+
   const element = document.querySelectorAll('#lista-tarefas .completed')
 
   for (let index = 0; index < element.length; index += 1)
@@ -104,11 +109,38 @@ function deleteFinished()
 
     element[index].remove()
   }
-
 }
+
+function deleteSelected()
+{
+
+  const element = document.querySelectorAll('#lista-tarefas .selected')
+
+  if (element)
+  {
+
+  element[0].remove()
+  }
+}
+
+function saveEverything()
+{
+
+  const storage = localStorage
+  const element = document.querySelector('#lista-tarefas').innerHTML
+
+
+  storage.setItem('tarefas', element)
+}
+
+
+
+window.onload = iListaTarefas.innerHTML = localStorage.getItem('tarefas')
 
 
 // EVENT LISTENERS
 iCriarTarefa.addEventListener('click', createItem)
 iApagarTudo.addEventListener('click', deleteEverything)
 iConcluir.addEventListener('click', deleteFinished)
+iSalvar.addEventListener('click', saveEverything)
+iRemover.addEventListener('click', deleteSelected)
