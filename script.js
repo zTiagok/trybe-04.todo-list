@@ -133,6 +133,47 @@ function saveEverything()
   storage.setItem('tarefas', element)
 }
 
+function moveUp()
+{
+
+  const element = document.querySelector('#lista-tarefas')
+  const selected = document.querySelector('.selected')
+
+  if (selected)
+  {
+
+    if (!element.firstElementChild.className.includes('selected'))
+    {
+
+      if (element.insertBefore(selected, selected.previousSibling))
+      {
+  
+        selected.className = 'list-object selected'
+      }
+    }
+  }
+}
+
+function moveDown()
+{
+
+  const element = document.querySelector('#lista-tarefas')
+  const selected = document.querySelector('.selected')
+
+  if (selected)
+  {
+
+    if (!element.lastElementChild.className.includes('selected'))
+    {
+
+      if (element.insertBefore(selected, selected.nextSibling.nextSibling))
+      {
+
+        selected.className = 'list-object selected'
+      }
+    }
+  }
+}
 
 
 window.onload = iListaTarefas.innerHTML = localStorage.getItem('tarefas')
@@ -144,3 +185,5 @@ iApagarTudo.addEventListener('click', deleteEverything)
 iConcluir.addEventListener('click', deleteFinished)
 iSalvar.addEventListener('click', saveEverything)
 iRemover.addEventListener('click', deleteSelected)
+iCima.addEventListener('click', moveUp)
+iBaixo.addEventListener('click', moveDown)
