@@ -3,7 +3,7 @@
     Check out this project <a href="https://ztiagok.github.io/trybe-04.todo-list/"> website</a>! 
   <h3>
   <h2>
-    To Do List
+    To-Do List
     <br><br>
   </h2>
 
