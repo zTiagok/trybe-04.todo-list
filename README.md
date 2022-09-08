@@ -28,9 +28,9 @@
     ℹ️ Information ℹ️
   </h3>
   <br>
-  <span> - </span> 
+  <span> A simple project with the goal of making a to-do list. </span> 
   <br><br>
-  <span> - </span>
+  <span> Add, sort, complete and remove list items in this basic application. </span>
   <br>
   <hr>
   <h3>
