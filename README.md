@@ -3,7 +3,7 @@
     Check out this project <a href="https://ztiagok.github.io/trybe-04.todo-list/"> website</a>! 
   <h3>
   <h2>
-    Pixel Art
+    To Do List
     <br><br>
   </h2>
 
