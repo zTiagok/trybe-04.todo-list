@@ -69,7 +69,7 @@
   <span> ◐ Click "Salvar" to save your list in your browser. ◑ </span>
   <br><br>
   <span> ◐ Click "Apagar" to clear the list. ◑ </span>
-  <br>
+  <br><br>
   <hr>
   <h3>
     📦 Frameworks and Libraries 📦
