@@ -58,17 +58,17 @@
     📄 Features 📄
   </h3>
   <br>
-  <span> ◐ Enter a phrase in the input and click "Create" to add to the list. ◑ </span>
+  <span> ◐ Enter a phrase in the input and click "Criar" to add to the list. ◑ </span>
   <br><br>
   <span> ◐ Click on an item in the list to interact with it. ◑ </span>
   <br><br>
-  <span> ◐ When selecting an item, click "Remove" to remove the item from the list. ◑ </span>
+  <span> ◐ When selecting an item, click "Remover" to remove the item from the list. ◑ </span>
   <br><br>
-  <span> ◐ When selecting an item, click "Move Up/Move Down" to reposition it. ◑ </span>
+  <span> ◐ When selecting an item, click "Mover para Cima/Mover para Baixo" to reposition it. ◑ </span>
   <br><br>
-  <span> ◐ Click "Save" to save your list in your browser. ◑ </span>
+  <span> ◐ Click "Salvar" to save your list in your browser. ◑ </span>
   <br><br>
-  <span> ◐ Click "Delete" to clear the list. ◑ </span>
+  <span> ◐ Click "Apagar" to clear the list. ◑ </span>
   <br>
   <hr>
   <h3>
